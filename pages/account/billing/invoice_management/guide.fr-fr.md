@@ -11,11 +11,11 @@ section: Facturation
 
 OVHcloud met à votre disposition un espace vous permettant de consulter, gérer et régler vos différentes factures, le tout sans interruption de service.
 
-**Ce guide vous explique comment effectuer les différentes actions de ce menu.**
+**Découvrez comment gérer vos factures depuis votre espace client OVHcloud**
 
 > [!primary]
 >
-> En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas à votre situation. Si vous avez le moindre doute, référez-vous à vos contrats OVHcloud disponibles dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rubrique `Mes services`{.action} puis `Mes contrats`{.action}.
+> En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas à votre situation. Si vous avez le moindre doute, référez-vous à vos contrats OVHcloud disponibles dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) (Cliquez en haut à droite de votre écran sur votre nom puis, dans le menu contextuel, sur `Gestion des services`{.action} puis sur l'onglet `Contrats`{.action}.
 >
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiQmopMhzik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -29,12 +29,12 @@ OVHcloud met à votre disposition un espace vous permettant de consulter, gérer
 
 > [!primary]
 >
-> Votre facture, lorsqu'elle est éditée par OVHcloud, vous est envoyée par e-mail sous la forme d'un lien cliquable et accessible directement en vous authentifiant à votre espace client OVHcloud. Toute facture reste également disponible depuis le tableau de bord de votre espace client OVHcloud.
+> Votre facture, lorsqu'elle est éditée par OVHcloud, vous est envoyée par e-mail sous forme d'un lien cliquable. Vous pourrez y accéder en vous authentifiant à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Toute facture reste également disponible depuis l'onglet `Tableau de bord`{.action} de votre espace client OVHcloud.
 >
 
 ### Comprendre votre facture
 
-La facture vous est envoyée suite au règlement d'une commande ou à un renouvellement automatique. Elle récapitule les produits payés ou à payer avec les périodes de renouvellement correspondantes et le montant des services. La référence d'une facture commence toujours par les lettres « FR ».
+La facture de votre service OVHcloud vous est envoyée suite au règlement d'une commande ou à un renouvellement. Elle récapitule les produits payés ou à payer avec les périodes de renouvellement correspondantes et le montant des services. La référence d'une facture commence toujours par les lettres « FR ».
 
 ![Détail d'une facture](images/invoice_ovh.png){.thumbnail}
 
@@ -46,62 +46,75 @@ La facture vous est envoyée suite au règlement d'une commande ou à un renouve
 Ci-dessous vous retrouverez le détail des services facturés :
 
 - « Abonnement » : une description du service et de la période facturée ;
-- « Domaine » : la référence du service facturé ;
-- « Quantité » : le nombre d'unités du service facturé ; 
+- « Référence » : la référence du service facturé ;
+- « Quantité » : le nombre d'unités du service facturé ;
 - « Prix unitaire » et « Prix HT » : le tarif des services.
 
-Les taxes seront ajoutées en bas, dans le récapitulatif global du montant indiqué « Total TTC ».
+Les taxes sont ajoutées dans le montant « Total TTC ».
 
 > [!primary]
 >
-> Si la mention « Relevé de compte » apparaît au niveau du moyen de paiement utilisé, cela signifie qu'il s'agit d'un renouvellement automatique. Le moyen de paiement utilisé sera forcément celui qui a été validé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+> Si la mention « Relevé de compte » apparaît au niveau du moyen de paiement utilisé, cela signifie qu'il s'agit d'un renouvellement automatique. Le moyen de paiement utilisé sera forcément celui qui a été validé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 >
 
 ### Découvrir l'espace facturation
 
 #### Consulter et gérer ses factures
 
-Pour consulter vos factures, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur votre prénom en haut à droite puis sur `Factures`{.action}. 
+Pour consulter vos factures, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre prénom en haut à droite puis sur `Factures`{.action}.
 
 ![Facturation](images/hubinvoices.png){.thumbnail}
 
-Vous arriverez alors sur une page récapitulative de vos différentes factures : 
+Vous arriverez alors sur une page récapitulative de vos différentes factures :
 
 ![Récapitulatif des factures](images/billing_section.png){.thumbnail}
 
-Sur chaque ligne du tableau vous retrouverez les informations suivantes :
+Sur chaque ligne du tableau, vous retrouverez les informations suivantes :
 
-- la référence de la facture (exemple : FR12345678) ;
-- la date d'émission de la facture ;
-- le montant de la facture ;
-- le solde à régler ;
-- la date à laquelle la facture est due ;
-- `...`{.action} : différentes actions seront possibles.
+- la `Référence`{.action} de la facture (exemple : FR12345678) ;
+- le `Numéro de la commande`{.action} correspondante ;
+- la `Date d'émission`{.action} de la facture ;
+- son `Montant HT`{.action} ;
+- son `Montant TTC`{.action} ;
+- le `Solde`{.action} à régler ;
+- le `Statut`{.action} de la facture (Impayée, Payée, etc.) ;
+- le bouton `...`{.action} qui permet [différentes actions](#actions).
 
 > [!primary]
 >
 > Si le solde à régler apparaît en rouge, une facture est en attente de paiement. La date à laquelle la facture est dûe vous indiquera qu'un paiement est à effectuer immédiatement.
 >
 
-Si la mention « Informations non disponibles » apparaît, cela signifie que la facture n'est pas liée à un renouvellement automatique. Vous pourrez afficher ces informations en cliquant sur `...`{.action}. Trois possibilités vous seront alors offertes :
+Si la mention « Informations non disponibles » apparaît, cela signifie que la facture n'est pas liée à un renouvellement automatique. Vous pourrez afficher ces informations en cliquant sur `...`{.action}. Trois possibilités vous seront alors offertes <a name="actions"></a> :
 
 ![Actions sur les factures](images/actions_choices.png){.thumbnail}
 
-- `Voir la version HTML`{.action} : la facture s'ouvrira dans un nouvel onglet de votre navigateur internet ;
+- `Voir la version HTML`{.action} : la facture s'ouvrira dans un nouvel onglet de votre navigateur ;
 - `Voir la version PDF`{.action} : un fichier au format PDF sera généré et vous pourrez le télécharger ;
-- `Voir les détails pour cette facture`{.action} : vous pourrez vérifier l'historique des opérations effectuées sur cette facture.
 
-Afin de vous simplifier la lecture, plusieurs filtres sont à votre disposition :
+##### **Filtres**
+
+Plusieurs filtres sont également à votre disposition :
 
 ![Filtres de tri](images/sort_filters.png){.thumbnail}
 
-Afin de retrouver une facture précise, il est possible d'indiquer une référence ou de vérifier la ou les factures sur une période donnée : trois mois, six mois, un an ou une période que vous spécifiez.
+Afin de retrouver une facture précise, vous pourrez ainsi indiquer sa référence, le numéro de la commande associée ou sa date d'émission.
 
-Le bouton `Exporter en CSV`{.action} vous permet de télécharger un fichier Excel au format .csv dans lequel seront récapitulées les factures sélectionnées. Ce fichier fera apparaître le montant, la référence et la date d'émission de ces factures.
+##### **Actions de masse**
+
+Via le menu `Actions de masse`{.action}, il vous est enfin possible d'exporter en format .csv ou .pdf le récapitulatif de vos factures. Les fichiers ainsi créés feront apparaître leur montant, référence et date d'émission.
+
+Si vous souhaitez exporter l'ensemble de vos factures, utilisez les boutons `Tout exporter en CSV`{.action} ou `Tout exporter en PDF`{.action}.
+
+![export_all](images/export_all.png){.thumbnail}
+
+Si vous souhaitez n'en exporter qu'une partie, cochez les cases dans la première colonne du tableau afin de sélectionner celles qui vous intéressent. Deux nouvelles commandes, `Exporter la sélection au format CSV`{.action} ou `Exporter la sélection au format PDF`{.action}, seront alors disponibles dans le menu `Actions de masse`{.action}.
+
+![export_selection](images/export_selection.png){.thumbnail}
 
 #### Payer vos factures <a name="payer-ma-facture"></a>
 
-Afin de procéder au règlement de vos factures en attente de paiement, il vous suffit de cliquer sur le bouton `Régler mon solde immédiatement`{.action}.
+Afin de procéder au règlement de vos factures en attente de paiement, il vous suffit de cliquer sur le menu `Actions de masse`{.action}, puis sur le bouton `Régler mon solde immédiatement`{.action}.
 
 ![Paiement de la dette](images/pay_debt.png){.thumbnail}
 
