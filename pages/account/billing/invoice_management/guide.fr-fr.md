@@ -22,8 +22,7 @@ OVHcloud met à votre disposition un espace vous permettant de consulter, gérer
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Être connecté en tant que contact facturation de votre service (plus de détails sur les différents contacts dans le guide « [Gérer les contacts de ses services](https://docs.ovh.com/fr/customer/gestion-des-contacts/) »).
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) en tant que [contact facturation](https://docs.ovh.com/fr/customer/gestion-des-contacts/) de votre service.
 
 ## En pratique
 
@@ -34,7 +33,7 @@ OVHcloud met à votre disposition un espace vous permettant de consulter, gérer
 
 ### Comprendre votre facture
 
-La facture de votre service OVHcloud vous est envoyée suite au règlement d'une commande ou à un renouvellement. Elle récapitule les montants correspondant à chacun de vos produits commandés ou renouvelés, ainsi que leurs périodes de validité. La référence d'une facture, pour un compte français, commence toujours par les lettres **FR**.
+La facture de votre service OVHcloud vous est envoyée suite au règlement d'une commande ou à un renouvellement. Elle récapitule les montants correspondant à l'acaht ou au renouvellement de vos produits, ainsi que leurs périodes de validité. La référence d'une facture, pour un compte français, commence toujours par les lettres **FR**.
 
 ![Détail d'une facture](images/invoice_ovh.png){.thumbnail}
 
@@ -45,9 +44,8 @@ La facture de votre service OVHcloud vous est envoyée suite au règlement d'une
 |3|Abonnement : une description du service et de la période facturée|
 |4|Référence : la référence du service facturé|
 |5|Quantité : le nombre d'unités du service facturé|
-|6|Prix unitaire : le tarif des services|
-
-Les taxes sont ajoutées dans le montant **Total TTC**.
+|6|Prix unitaire (Hors Taxe) d'un produit|
+|7|Montant total (Toutes Taxes Comprises) de la facture|
 
 > [!primary]
 >
@@ -108,7 +106,7 @@ Si vous souhaitez n'en exporter qu'une partie, cochez les cases correspondantes 
 
 ![export_selection](images/export_selection.png){.thumbnail}
 
-#### Payer vos factures <a name="payer-ma-facture"></a>
+#### Payer vos factures
 
 Afin de procéder au règlement de vos factures en attente de paiement, il vous suffit de cliquer sur le menu `Actions de masse`{.action} puis sur le bouton `Régler mon solde immédiatement`{.action}.
 
@@ -147,7 +145,7 @@ Vous pouvez suivre tous les paiements effectués depuis la partie `Facturation` 
 
 ![Suivi des paiements](images/payment_tracking.png){.thumbnail}
 
-Depuis cet espace, vous pouvez également exporter vos justificatifs de paiement au format *.csv*. Comme pour la gestion des factures, vous pouvez filtrer les périodes à afficher.
+Depuis cet espace, vous pouvez également exporter vos justificatifs de paiement au format *.csv*, via le bouton `Exporter en CSV`{.action} (1). Plusieurs filtres sont également à votre disposition via le bouton `Filtrer`{.action} (2).
 
 > [!primary]
 >
@@ -155,6 +153,10 @@ Depuis cet espace, vous pouvez également exporter vos justificatifs de paiement
 >
 
 ## Aller plus loin
+
+[Gérer le renouvellement de mes services](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/)
+
+[Gérer mes moyens de paiement](https://docs.ovh.com/fr/billing/manage-payment-methods/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 
