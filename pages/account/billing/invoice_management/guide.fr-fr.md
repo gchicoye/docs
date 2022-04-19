@@ -1,21 +1,21 @@
 ---
-title: 'Gérer mes factures OVHcloud'
+title: Gérer mes factures OVHcloud
 slug: gerer-factures-ovh
-excerpt: 'Découvrez comment gérer vos factures et les paiements liés à celles-ci'
+excerpt: Découvrez comment gérer vos factures et les paiements liés à celles-ci
 section: Facturation
 ---
 
-**Dernière mise à jour le 29/03/2022**
+**Dernière mise à jour le 19/04/2022**
 
 ## Objectif
 
-OVHcloud met à votre disposition un espace vous permettant de consulter, gérer et régler vos différentes factures, le tout sans interruption de service.
+OVHcloud met à votre disposition un espace vous permettant de consulter, gérer et régler vos différentes factures.
 
 **Découvrez comment gérer vos factures depuis votre espace client OVHcloud**
 
 > [!primary]
 >
-> En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas à votre situation. Si vous avez le moindre doute, référez-vous à vos contrats OVHcloud disponibles dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) (Cliquez en haut à droite de votre écran sur votre nom puis, dans le menu contextuel, sur `Gestion des services`{.action} puis sur l'onglet `Contrats`{.action}.
+> En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas selon votre situation. Si vous avez le moindre doute, référez-vous à vos contrats OVHcloud disponibles dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) (Cliquez en haut à droite de votre écran sur votre nom puis, dans le menu contextuel, sur `Gestion des services`{.action} puis sur l'onglet `Contrats`{.action}.
 >
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiQmopMhzik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -23,7 +23,7 @@ OVHcloud met à votre disposition un espace vous permettant de consulter, gérer
 ## Prérequis
 
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Être connecté en tant que contact facturation de votre service (plus de détails sur les différents contacts dans le guide « [Gérer les contacts de ses services](https://docs.ovh.com/fr/customer/gestion-des-contacts/) »).
+- Être connecté en tant que contact facturation de votre service (plus de détails sur les différents contacts dans le guide « [Gérer les contacts de ses services](https://docs.ovh.com/fr/customer/gestion-des-contacts/) »).
 
 ## En pratique
 
@@ -34,23 +34,20 @@ OVHcloud met à votre disposition un espace vous permettant de consulter, gérer
 
 ### Comprendre votre facture
 
-La facture de votre service OVHcloud vous est envoyée suite au règlement d'une commande ou à un renouvellement. Elle récapitule les produits payés ou à payer avec les périodes de renouvellement correspondantes et le montant des services. La référence d'une facture commence toujours par les lettres « FR ».
+La facture de votre service OVHcloud vous est envoyée suite au règlement d'une commande ou à un renouvellement. Elle récapitule les montants correspondant à chacun de vos produits commandés ou renouvelés, ainsi que leurs périodes de validité. La référence d'une facture, pour un compte français, commence toujours par les lettres **FR**.
 
 ![Détail d'une facture](images/invoice_ovh.png){.thumbnail}
 
 |Numéro|Description|
 |---|---|
-|1|Les informations sur la facture, à savoir sa référence, la date d'émission, le bon de commande auquel elle se réfère, le type de paiement et enfin l'identifiant client.|
-|2|Un récapitulatif des informations du contact facturation.|
+|1|Informations sur la facture : référence, date d'émission, bon de commande auquel elle se réfère, type de paiement et identifiant client concerné.|
+|2|Informations du contact facturation.|
+|3|Abonnement : une description du service et de la période facturée|
+|4|Référence : la référence du service facturé|
+|5|Quantité : le nombre d'unités du service facturé|
+|6|Prix unitaire : le tarif des services|
 
-Ci-dessous vous retrouverez le détail des services facturés :
-
-- « Abonnement » : une description du service et de la période facturée ;
-- « Référence » : la référence du service facturé ;
-- « Quantité » : le nombre d'unités du service facturé ;
-- « Prix unitaire » et « Prix HT » : le tarif des services.
-
-Les taxes sont ajoutées dans le montant « Total TTC ».
+Les taxes sont ajoutées dans le montant **Total TTC**.
 
 > [!primary]
 >
@@ -61,9 +58,14 @@ Les taxes sont ajoutées dans le montant « Total TTC ».
 
 #### Consulter et gérer ses factures
 
-Pour consulter vos factures, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre prénom en haut à droite puis sur `Factures`{.action}.
+Pour consulter vos factures, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur votre nom en haut à droite de votre écran puis, dans le nouveau menu qui apparaît, sur `Factures`{.action}.
 
 ![Facturation](images/hubinvoices.png){.thumbnail}
+
+> [!primary]
+>
+> Si le solde à régler apparaît en rouge, cela signifie qu'une facture est en attente de paiement. La date à laquelle la facture est due vous indiquera qu'un paiement est à effectuer immédiatement.
+>
 
 Vous arriverez alors sur une page récapitulative de vos différentes factures :
 
@@ -77,20 +79,14 @@ Sur chaque ligne du tableau, vous retrouverez les informations suivantes :
 - son `Montant HT`{.action} ;
 - son `Montant TTC`{.action} ;
 - le `Solde`{.action} à régler ;
-- le `Statut`{.action} de la facture (Impayée, Payée, etc.) ;
-- le bouton `...`{.action} qui permet [différentes actions](#actions).
+- le `Statut`{.action} de la facture (`Impayée` ou `Payée`) ;
 
-> [!primary]
->
-> Si le solde à régler apparaît en rouge, une facture est en attente de paiement. La date à laquelle la facture est dûe vous indiquera qu'un paiement est à effectuer immédiatement.
->
+En cliquant sur l'un des boutons `...`{.action} à droite du tableau, vous pourrez également :
 
-Si la mention « Informations non disponibles » apparaît, cela signifie que la facture n'est pas liée à un renouvellement automatique. Vous pourrez afficher ces informations en cliquant sur `...`{.action}. Trois possibilités vous seront alors offertes <a name="actions"></a> :
+- `Voir la version HTML`{.action} : la facture s'affichera sur votre navigateur dans un nouvel onglet ;
+- `Voir la version PDF`{.action} : une version PDF téléchargeable de votre facture sera générée automatiquement.
 
 ![Actions sur les factures](images/actions_choices.png){.thumbnail}
-
-- `Voir la version HTML`{.action} : la facture s'ouvrira dans un nouvel onglet de votre navigateur ;
-- `Voir la version PDF`{.action} : un fichier au format PDF sera généré et vous pourrez le télécharger ;
 
 ##### **Filtres**
 
@@ -102,23 +98,23 @@ Afin de retrouver une facture précise, vous pourrez ainsi indiquer sa référen
 
 ##### **Actions de masse**
 
-Via le menu `Actions de masse`{.action}, il vous est enfin possible d'exporter en format .csv ou .pdf le récapitulatif de vos factures. Les fichiers ainsi créés feront apparaître leur montant, référence et date d'émission.
+Via le menu `Actions de masse`{.action}, il vous est enfin possible d'exporter en format *.csv* ou *.pdf* le récapitulatif de vos factures. Les fichiers ainsi créés feront apparaître leur montant, référence et date d'émission.
 
 Si vous souhaitez exporter l'ensemble de vos factures, utilisez les boutons `Tout exporter en CSV`{.action} ou `Tout exporter en PDF`{.action}.
 
 ![export_all](images/export_all.png){.thumbnail}
 
-Si vous souhaitez n'en exporter qu'une partie, cochez les cases dans la première colonne du tableau afin de sélectionner celles qui vous intéressent. Deux nouvelles commandes, `Exporter la sélection au format CSV`{.action} ou `Exporter la sélection au format PDF`{.action}, seront alors disponibles dans le menu `Actions de masse`{.action}.
+Si vous souhaitez n'en exporter qu'une partie, cochez les cases correspondantes dans la première colonne du tableau afin de sélectionner les factures qui vous intéressent. Deux nouvelles commandes, `Exporter la sélection au format CSV`{.action} ou `Exporter la sélection au format PDF`{.action}, seront alors disponibles dans le menu `Actions de masse`{.action}.
 
 ![export_selection](images/export_selection.png){.thumbnail}
 
 #### Payer vos factures <a name="payer-ma-facture"></a>
 
-Afin de procéder au règlement de vos factures en attente de paiement, il vous suffit de cliquer sur le menu `Actions de masse`{.action}, puis sur le bouton `Régler mon solde immédiatement`{.action}.
+Afin de procéder au règlement de vos factures en attente de paiement, il vous suffit de cliquer sur le menu `Actions de masse`{.action} puis sur le bouton `Régler mon solde immédiatement`{.action}.
 
 ![Paiement de la dette](images/pay_debt.png){.thumbnail}
 
-Un [bon de commande](https://docs.ovh.com/fr/billing/gerer-ses-commandes-ovh/#le-bon-de-commande) de régularisation sera alors créé. Une fois le paiement effectué, la situation sera régularisée.
+Un [bon de commande de régularisation](https://docs.ovh.com/fr/billing/gerer-ses-commandes-ovh/#le-bon-de-commande) sera alors créé. Une fois le paiement effectué, la situation sera régularisée.
 
 > [!primary]
 >
@@ -127,19 +123,31 @@ Un [bon de commande](https://docs.ovh.com/fr/billing/gerer-ses-commandes-ovh/#le
 
 #### Demander l'annulation d'une facture
 
-Selon les [Conditions Générales de Vente]() (CGV) d'OVHcloud, une facture de renouvellement est due.
+> [!primary]
+>
+> Pour demander la résiliation de votre service à échéance, suivez les instructions de ce [guide](https://docs.ovh.com/fr/billing/how-to-cancel-your-services/).
+>
 
-Si vous avez reçu une facture que vous ne considérez pas comme légitime au vu de nos [Conditions Générales de Vente]() (CGV), vous pouvez effectuer une réclamation via
+Selon les [Conditions Générales de Service](https://www.ovh.com/fr/support/documents_legaux/conditions%20generales%20de%20service.pdf) d'OVHcloud, une facture de renouvellement est due.
 
-Pour demander la résiliation de votre service à échéance, suivez les instructions de ce [guide](https://docs.ovh.com/fr/billing/how-to-cancel-your-services/).
+Si vous avez reçu une facture que vous ne considérez pas comme légitime au vu de nos **Conditions Générales de Service** et que vous souhaitez en demander le remboursement ou faire valoir votre [droit de rétractation](https://docs.ovh.com/fr/billing/gerer-ses-commandes-ovh/#appliquer-le-droit-de-retractation), vous pouvez effectuer une réclamation via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) :
+
+- Cliquez en haut à droite de votre écran sur votre nom ;
+- Tout en bas du menu contextuel de droite, cliquez sur `Créer un ticket`{.action} ;
+- Dans `Thématique`, choisissez `Facturation et suivi de commande`{.action} ;
+- Dans `Produit`, choisissez le type de produits concerné par votre demande ;
+- Dans `Service concerné`, choisissez le nom du service concerné ;
+- Dans `Question`, choisissez `J'ai une réclamation`{.action} ;
+- Dans les deux formulaires suivants de type `Question`, précisez votre demande et votre situation ;
+- Validez votre demande en cliquant sur `Créer une nouvelle demande`{.action}.
 
 ### Suivre vos paiements
 
-Vous pouvez suivre tous les paiements effectués depuis la partie `Facturation` dans `Suivi des paiements`{.action}. Ceci permet de faire le lien entre les factures et les paiements associés. La référence d'un justificatif de paiement commence toujours par les lettres « PA_FR ».
+Vous pouvez suivre tous les paiements effectués depuis la partie `Facturation` dans `Suivi des paiements`{.action}. Ceci permet de faire le lien entre les factures et les paiements associés. La référence d'un justificatif de paiement commence toujours par les lettres **PA_FR**.
 
 ![Suivi des paiements](images/payment_tracking.png){.thumbnail}
 
-Depuis cet espace, vous pouvez également exporter vos justificatifs de paiement au format .csv. Comme pour la gestion des factures, vous pouvez filtrer les périodes à afficher.
+Depuis cet espace, vous pouvez également exporter vos justificatifs de paiement au format *.csv*. Comme pour la gestion des factures, vous pouvez filtrer les périodes à afficher.
 
 > [!primary]
 >
