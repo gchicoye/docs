@@ -89,7 +89,8 @@ Wenn “Keine Informationen verfügbar” angegeben ist, dann bezieht sich die R
 
 - `Die HTML Version anzeigen`{.action}: die Rechnung wird in einem neuen Tab als HTML in Ihrem Browser angezeigt;
 - `Die PDF Version anzeigen`{.action}: die Rechnung wird als PDF-Dokument anzeigt, das Sie herunterladen können;
-- `Details zu dieser Rechnung anzeigen`{.action}: Sie können den Verlauf der zu dieser Rechnung bereits getätigten Aktionen überprüfen.
+- `Details fÜr den Sollbetrag einsehen`{.action}: Mit dieser Option können Sie den Verlauf der Transaktionen für einen unbezahlten Saldo überprüfen.
+- `Mein Konto sofort ausgleichen`{.action}: Hiermit können Sie einen Bestellschein erstellen, mit dem ein unbezahlter Saldo sofort beglichen werden kann.
 
 
 Nutzen Sie die vorgegebenen Such- und Filterfunktionen, um leicht den Überblick zu behalten:
