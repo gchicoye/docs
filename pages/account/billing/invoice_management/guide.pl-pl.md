@@ -5,7 +5,7 @@ excerpt: 'Dowiedz się, jak zarządzać fakturami i związanymi z nimi płatnoś
 section: Płatności
 ---
 
-**Ostatnia aktualizacja z dnia 18-01-2021**
+**Ostatnia aktualizacja z dnia 20-04-2022**
 
 ## Wprowadzenie
 
@@ -82,13 +82,14 @@ W poszczególnych wierszach tabelki znajdziesz następujące informacje:
 > Jeśli saldo do uregulowania wyświetla się na czerwono, faktura oczekuje na realizację płatności. Data płatności wskazana na fakturze informuje Cię, że płatność jest wymagalna natychmiast.
 >
 
-Jeśli wyświetla się napis “Informacja niedostępna”, oznacza to, że faktura nie jest powiązana z automatycznym odnowieniem. Możesz wyświetlić te informacje, klikając na `...`{.action}. Zaproponowane zostaną trzy możliwości:
+Jeśli wyświetla się napis “Informacja niedostępna”, oznacza to, że faktura nie jest powiązana z automatycznym odnowieniem. Możesz wyświetlić te informacje, klikając na `...`{.action}. Możesz wybrać spośród następujących opcji:
 
 ![Operacje dotyczące faktur](images/actions_choices.png){.thumbnail}
 
 - `Wyświetl wersję HTML`{.action}: faktura otworzy się w nowej zakładce w przeglądarce internetowej;
 - `Wyświetl wersję PDF`{.action}: wygenerowany zostanie plik w formacie PDF, który będziesz mógł pobrać;
-- `Wyświetl szczegóły faktury`{.action}: będziesz mógł sprawdzić historię operacji wykonanych w związku z fakturą.
+- `Sprawdź szczegóły dla tego zadłużenia`{.action}: będziesz mógł sprawdzić historię operacji na niezapłaconym saldzie.
+- `Ureguluj saldo teraz`{.action}: umożliwia utworzenie zlecenia zakupu w celu natychmiastowej zapłaty zaległego salda.
 
 Dostępnych jest kilka filtrów ułatwiających sortowanie faktur:
 

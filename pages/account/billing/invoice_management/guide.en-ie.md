@@ -5,7 +5,7 @@ excerpt: 'Find out how to manage your bills and the payments associated with the
 section: Billing
 ---
 
-**Last updated 18th January 2021**
+**Last updated 20th April 2022**
 
 ## Objective
 
@@ -71,6 +71,7 @@ You will then land on a page summarising your bills:
 On this page, you will see the following information:
 
 - the bill reference
+- the order number associated to the bill
 - the bill issue date
 - the bill total
 - the amount to pay
@@ -83,13 +84,14 @@ On this page, you will see the following information:
 > If the total amount appears in red, then this means that the bill is pending payment. The date on which the bill is due will show whether the payment needs to be made immediately.
 >
 
-If ‘Information not available’ appears, this means that the bill is not linked to an automatic renewal. You can view this information by clicking `...`{.action}. Three options will appear:
+If ‘Information not available’ appears, this means that the bill is not linked to an automatic renewal. You can view this information by clicking `...`{.action}. Two options or more options will appear depending on the status of the bill:
 
 ![Actions for bills](images/actions_choices.png){.thumbnail}
 
 - `See HTML version`{.action}. The bill will open in a new tab in your web browser.
 - `See PDF version`{.action}. A PDF file will be generated, which you can then download.
-- `See details of this bill`{.action}. You can view a log of the operations performed on this bill.
+- `View details for this outstanding amount`{.action}. You can view the history of operations on an outstanding balance.
+- `Pay balance immediately`{.action}. Allows you to generate a purchase order to immediately settle an outstanding amount.
 
 To make this document easier to read, there are several filters:
 

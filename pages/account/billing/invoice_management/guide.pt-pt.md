@@ -5,7 +5,7 @@ excerpt: 'Saiba como gerir as suas faturas e pagamentos na OVHcloud'
 section: Faturação
 ---
 
-**Última atualização: 08/04/2021**
+**Última atualização: 20/04/2022**
 
 ## Sumário
 
@@ -88,7 +88,8 @@ Se aparecer a menção “Informações indisponíveis”, isto significa que a 
 
 - `Ver a versão HTML`{.action}: a fatura irá abrir num novo separador do seu browser;
 - `Ver a versão PDF`{.action}: será gerado um ficheiro PDF que poderá descarregar;
-- `Consultar os detalhes desta fatura`{.action}: pode consultar o histórico de operações realizadas na fatura.
+- `Ver os detalhes desta dívida`{.action}: permite-lhe verificar o histórico de transacções de um saldo em dívida.
+- `Pagar o minha dívida imediatamente`{.action}: permite-lhe criar uma nota de encomenda para pagar um montante pendente imediatamente.
 
 Para facilitar a leitura, pode utilizar os filtros que aparecem na parte superior da tabela:
 

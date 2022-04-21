@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment gérer vos factures et les paiements liés à celle
 section: Facturation
 ---
 
-**Dernière mise à jour le 08/04/2021**
+**Dernière mise à jour le 20/04/2022**
 
 ## Objectif
 
@@ -30,7 +30,7 @@ OVHcloud met à votre disposition un espace vous permettant de consulter, gérer
 > [!primary]
 > Mise à jour - Janvier 2021
 >
-Votre facture, lorsqu'elle est éditée par OVHcloud, vous est envoyée par e-mail sous la forme d'un lien cliquable et accessible directement en vous authentifiant à votre espace client OVHcloud. Toute facture reste également disponible depuis le tableau de bord de votre espace-client OVHcloud.
+Votre facture, lorsqu'elle est éditée par OVHcloud, vous est envoyée par e-mail sous la forme d'un lien cliquable et accessible directement en vous authentifiant à votre espace client OVHcloud. Toute facture reste également disponible depuis le tableau de bord de votre espace client OVHcloud.
 >
 
 ### Comprendre votre facture
@@ -73,6 +73,7 @@ Vous arriverez alors sur une page récapitulative de vos différentes factures :
 Sur chaque ligne du tableau vous retrouverez les informations suivantes :
 
 - la référence de la facture (exemple : FR12345678) ;
+- le numéro de commande associé à la facture ;
 - la date d'émission de la facture ;
 - le montant de la facture ;
 - le solde à régler ;
@@ -84,13 +85,14 @@ Sur chaque ligne du tableau vous retrouverez les informations suivantes :
 > Si le solde à régler apparaît en rouge, une facture est en attente de paiement. La date à laquelle la facture est dûe vous indiquera qu'un paiement est à effectuer immédiatement.
 >
 
-Si la mention « Informations non disponibles » apparaît, cela signifie que la facture n'est pas liée à un renouvellement automatique. Vous pourrez afficher ces informations en cliquant sur `...`{.action}. Trois possibilités vous seront alors offertes :
+Si la mention « Informations non disponibles » apparaît, cela signifie que la facture n'est pas liée à un renouvellement automatique. Vous pourrez afficher ces informations en cliquant sur `...`{.action}. Deux possibilités ou plus vous seront offertes en fonction du statut de la facture :
 
 ![Actions sur les factures](images/actions_choices.png){.thumbnail}
 
 - `Voir la version HTML`{.action} : la facture s'ouvrira dans un nouvel onglet de votre navigateur internet ;
 - `Voir la version PDF`{.action} : un fichier au format PDF sera généré et vous pourrez le télécharger ;
-- `Voir les détails pour cette facture`{.action} : vous pourrez vérifier l'historique des opérations effectuées sur cette facture.
+- `Voir les détails pour cette dette`{.action} : vous pourrez vérifier l'historique des opérations sur un solde impayé.
+- `Régler mon solde immédiatement`{.action} : vous permet de créér un bon de commande permettant de régler immédiatement un solde impayé.
 
 Afin de vous simplifier la lecture, plusieurs filtres sont à votre disposition :
 

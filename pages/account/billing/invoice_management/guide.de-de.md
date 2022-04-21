@@ -5,7 +5,7 @@ excerpt: 'Hier erfahren Sie, wie Sie Ihre Rechnungen und deren Bezahlung verwalt
 section: Abrechnung
 ---
 
-**Stand 08.04.2021**
+**Letzte Aktualisierung am 20.04.2022**
 
 ## Einleitung
 
@@ -71,6 +71,7 @@ Sie gelangen dann auf eine Übersichtsseite, auf der alle Ihre Rechnungen aufgel
 Hier finden Sie zu jeder Tabellenzeile folgende Informationen:
 
 - die Rechnungsnummer (zum Beispiel: DE12345678);
+- die Bestellnummer der Rechnung
 - das Ausstellungsdatum;
 - den gesamten Rechnungsbetrag;
 - den noch ausstehenden Betrag;
@@ -82,12 +83,12 @@ Hier finden Sie zu jeder Tabellenzeile folgende Informationen:
 > Wenn der noch ausstehende Rechnungsbetrag rot markiert ist, dann muss diese Rechnung bezahlt werden. Die Rechnungsfrist gibt Ihnen an, ob eine Zahlung sofort fällig ist.
 >
 
-Wenn “Keine Informationen verfügbar” angegeben ist, dann bezieht sich die Rechnung nicht auf eine automatische Verlängerung. Klicken Sie auf die drei Punkte`...`{.action}, um weitere Aktionen auszuführen. Die folgenden drei Aktionen werden Ihnen angezeigt:
+Wenn “Keine Informationen verfügbar” angegeben ist, dann bezieht sich die Rechnung nicht auf eine automatische Verlängerung. Klicken Sie auf die drei Punkte`...`{.action}, um weitere Aktionen auszuführen. Sie können aus den folgenden Optionen wählen:
 
 ![Aktionen bei Rechnungen](images/actions_choices.png){.thumbnail}
 
-- `HTML anzeigen`{.action}: die Rechnung wird in einem neuen Tab als HTML in Ihrem Browser angezeigt;
-- `PDF anzeigen`{.action}: die Rechnung wird als PDF-Dokument anzeigt, das Sie herunterladen können;
+- `Die HTML Version anzeigen`{.action}: die Rechnung wird in einem neuen Tab als HTML in Ihrem Browser angezeigt;
+- `Die PDF Version anzeigen`{.action}: die Rechnung wird als PDF-Dokument anzeigt, das Sie herunterladen können;
 - `Details zu dieser Rechnung anzeigen`{.action}: Sie können den Verlauf der zu dieser Rechnung bereits getätigten Aktionen überprüfen.
 
 

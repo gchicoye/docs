@@ -5,7 +5,7 @@ excerpt: 'Cómo gestionar sus facturas y pagos en OVHcloud'
 section: 'Pedidos, facturas y servicios'
 ---
 
-**Última actualización: 08/04/2021**
+**Última actualización: 20/04/2022**
 
 ## Objetivo
 
@@ -32,7 +32,7 @@ La factura, que se emite por OVHcloud, se envía por correo electrónico como un
 
 ### Partes de una factura de OVHcloud
 
-La factura es el documento que se genera al abonar un pedido o cuando se realiza una renovación automática un servicio. Dicho documento recoge los productos pagados o pendientes de pago, junto con el período de renovación y el importe correspondientes. La referencia de las facturas de OVHcloud emitidas por la filial española de OVH siempre empieza por «ES».
+La factura es el documento que se genera al abonar un pedido o cuando se realiza una renovación automática un servicio. Dicho documento recoge los productos pagados o pendientes de pago, junto con el período de renovación y el importe correspondientes. La referencia de las facturas de OVHcloud emitidas por la filial española de OVHcloud siempre empieza por «ES».
 
 ![Detalles de una factura](images/invoice-es.png){.thumbnail}
 
@@ -86,9 +86,10 @@ Cuando la factura no corresponde a una renovación automática, el saldo a pagar
 
 ![Opciones](images/actions-choice.png){.thumbnail}
 
-- **Ver la versión HTML**: La factura se abrirá en una nueva pestaña de su navegador.
-- **Ver la versión PDF**: Se generará un archivo en formato PDF que podrá descargar en su ordenador.
-- **Ver los detalles**: Puede consultar el historial de operaciones realizadas en la factura (en las facturas no relativas a renovaciones automáticas).
+- `Ver la versión HTML`{.action}: La factura se abrirá en una nueva pestaña de su navegador.
+- `Ver la versión PDF`{.action}: Se generará un archivo en formato PDF que podrá descargar en su ordenador.
+- `Ver los detalles`{.action}: Puede consultar el historial de operaciones de un saldo pendiente.
+- `Abonar el importe pendiente ahora`{.action}: Permite generar una orden de pedido para pagar un saldo pendiente inmediatamente.
 
 Para localizar fácilmente una o más facturas, puede utilizar los filtros situados sobre la tabla.
 

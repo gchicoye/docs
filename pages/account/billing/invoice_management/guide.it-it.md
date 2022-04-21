@@ -5,7 +5,7 @@ excerpt: 'Come amministrare fatture e pagamenti dallo Spazio Cliente'
 section: Fatturazione
 ---
 
-**Ultimo aggiornamento: 08/04/2021**
+**Ultimo aggiornamento: 20/04/2022**
 
 ## Obiettivo
 
@@ -88,7 +88,8 @@ Se la fattura non è associata a un rinnovo automatico, nelle colonne relative a
 
 - `Visualizza in HTML`{.action}: il documento si aprirà in una nuova scheda del browser
 - `Visualizza in PDF`{.action}: il documento verrà generato in formato PDF e il file sarà disponibili al download
-- `Visualizza i dettagli di questa fattura`{.action}\: questa opzione consente di visualizzare lo storico delle operazioni effettuate sulla fattura
+- `Visualizza i dettagli di questo addebito`{.action}: questa opzione consente di visualizzare lo storico delle operazioni di un saldo in sospeso.
+- `Salda subito l'importo dovuto`{.action} : permette di generare un buono d'ordine per pagare immediatamente un saldo in sospeso.
 
 Per semplificare la lettura della tabella, in alto a destra sono disponibili alcuni filtri:
 
