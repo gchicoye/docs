@@ -79,7 +79,7 @@ On this page, you will see the following information:
 > If the total amount appears in red, then this means that the bill is pending payment. The date on which the bill is due will show whether the payment needs to be made immediately.
 >
 
-If ‘Information not available’ appears, this means that the bill is not linked to an automatic renewal. You can view this information by clicking `...`{.action}. Two options or more options will appear depending on the status of the bill:
+If ‘Information not available’ appears, this means that the bill is not linked to an automatic renewal. For more information on a bill, click the `...`{.action}. The following options will appear depending on the status of the bill:
 
 ![Actions for bills](images/actions_choices.png){.thumbnail}
 
@@ -100,7 +100,7 @@ With the `Export as CSV`{.action} button, you can download an Excel file in .csv
 
 To pay bills that are pending payment, click `Pay balance immediately`{.action}.
 
-![Pay a due amount](images/pay_debt_ca.png){.thumbnail}
+![Pay a due amount](images/pay_debt.png){.thumbnail}
 
 A [purchase order](../managing-ovh-orders/#purchase-order){.external} for the settlement will then be created. Once the payment has been made, your account will no longer be in debit.
 

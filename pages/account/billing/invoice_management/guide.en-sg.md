@@ -79,9 +79,9 @@ On this page, you will see the following information:
 > If the total amount appears in red, then this means that the bill is pending payment. The date on which the bill is due will show whether the payment needs to be made immediately.
 >
 
-If ‘Information not available’ appears, this means that the bill is not linked to an automatic renewal. You can view this information by clicking `...`{.action}. Two options or more options will appear depending on the status of the bill:
+If ‘Information not available’ appears, this means that the bill is not linked to an automatic renewal. For more information on a bill, click the `...`{.action}. The following options will appear depending on the status of the bill:
 
-![Actions for bills](images/action-choices_ca.png){.thumbnail}
+![Actions for bills](images/actions_choices.png){.thumbnail}
 
 - `See HTML version`{.action}. The bill will open in a new tab in your web browser.
 - `See PDF version`{.action}. A PDF file will be generated, which you can then download.
@@ -90,7 +90,7 @@ If ‘Information not available’ appears, this means that the bill is not link
 
 To make this document easier to read, there are several filters:
 
-![Sort filters](images/sort_filters_ca.png){.thumbnail}
+![Sort filters](images/sort_filters.png){.thumbnail}
 
 To search for a specific bill, you can enter a reference ID, or check bills from a set time period: three months, six months, or a period that you can set manually.
 
@@ -100,7 +100,7 @@ With the `Export as CSV`{.action} button, you can download an Excel file in .csv
 
 To pay bills that are pending payment, click `Pay balance immediately`{.action}.
 
-![Pay a due amount](images/pay_debt_ca.png){.thumbnail}
+![Pay a due amount](images/pay_debt.png){.thumbnail}
 
 A [purchase order](../managing-ovh-orders/#purchase-order){.external} for the settlement will then be created. Once the payment has been made, your account will no longer be in debit.
 
@@ -108,7 +108,7 @@ A [purchase order](../managing-ovh-orders/#purchase-order){.external} for the se
 
 You can track all of the payments you have made in the `Billing` section, in `Payment Tracking`{.action}. This way, you can see which payments and bills are linked to one another. The reference ID for a payment receipt always begins with the letters ‘PA_’.
 
-![Payment tracking](images/payment_tracking_ca.png){.thumbnail}
+![Payment tracking](images/payment_tracking.png){.thumbnail}
 
 In this section, you can also export your payment receipts in .csv format. As is the case for managing bills, you can filter the periods that will be shown.
 

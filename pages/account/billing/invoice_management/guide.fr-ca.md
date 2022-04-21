@@ -80,7 +80,7 @@ Sur chaque ligne du tableau vous retrouverez les informations suivantes :
 > Si le solde à régler apparaît en rouge, une facture est en attente de paiement. La date à laquelle la facture est dûe vous indiquera qu'un paiement est à effectuer immédiatement.
 >
 
-Si la mention « Informations non disponibles » apparaît, cela signifie que la facture n'est pas liée à un renouvellement automatique. Vous pourrez afficher ces informations en cliquant sur `...`{.action}. Deux possibilités ou plus vous seront offertes en fonction du statut de la facture :
+Si la mention « Informations non disponibles » apparaît, cela signifie que la facture n'est pas liée à un renouvellement automatique. Pour plus d'informations sur une facture, cliquer sur les `...`{.action}. Les options suivantes vous seront offertes en fonction du statut de la facture : 
 
 ![Actions sur les factures](images/actions_choices.png){.thumbnail}
 
