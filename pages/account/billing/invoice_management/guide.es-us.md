@@ -66,7 +66,7 @@ Para consultar sus facturas, conéctese al [área de cliente de OVHcloud](https:
 
 Se abrirá una página en la que podrá ver todas sus facturas.
 
-![Mis facturas](images/billing-section.png){.thumbnail}
+![Mis facturas](images/billing_section.png){.thumbnail}
 
 Para cada factura, se muestran los siguientes datos:
 
