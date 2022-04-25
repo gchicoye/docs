@@ -18,12 +18,12 @@ En fonction de votre système, une post-configuration peut-être nécessaire afi
 Le Multipath permet d'aggréger les différentes possibilitées d'accès au même disque ( path ) en tant que device logique unique.
 
 Cette documentation détaille: 
-- Les templates Ohv compatibles (testé par nos equipes)
+- Les templates Ovh compatibles (testés par nos equipes)
 - Le mode opératoire de post-configuration par OS.
 
 > [!primary]
 >
-> A ce jour de toutes les distributions n'ont pas encore été testé. 
+> A ce jour de toutes les distributions n'ont pas encore été testées. 
 > Vous ne trouverez que les versions les plus récente des systèmes.
 > 
 
@@ -53,7 +53,7 @@ Il y a donc en tout quatre manière d'accéder à un disque vu par le système:
 - Controleur SAS 2 -> Disque A
 - Controleur SAS 2 -> Disque B
 
-Ceci est repliqué pour les 102 disques.
+Ceci est répliqué pour les 102 disques.
 
 ## Liste des système d'exploitations
 
@@ -73,7 +73,7 @@ Ceci est repliqué pour les 102 disques.
 
 Esxi n'a pas besoin d'installation de composants supplémentaires, le multipath est automatiquement géré.
 
-Si nécessaire vous pouvez proceder aux vérifications décritent ci-dessous.
+Si nécéssaire vous pouvez procéder aux vérifications décritent ci-dessous.
 
 ### Vérifications
 Vous connecter via ssh en shell sur votre Esxi.
@@ -142,7 +142,7 @@ Vous devez voir 102 disques
 
 #### Details du multipath
 
-Afin de ne pas surchager inutilement cette documentation, nous n'affichons qu'un des elements retourné.
+Note: Afin de ne pas surchager inutilement cette documentation, nous n'affichons qu'un des elements retourné.
 
 ```bash
 root@nsxxxxxx:~] esxcli storage hpp path list
@@ -169,7 +169,7 @@ On note que pour chaque device, il existe bien quatre chemins d'accès (ligne _P
 
 ### Vue via l'interface WEB
 
-Sélèctionner __Storage__ puis l'onglet __Devices__
+Sélectionner __Storage__ puis l'onglet __Devices__
 
 Filtrer les résultats avec le mot __WDC__
 
@@ -181,7 +181,7 @@ Scroller en bas de la liste, vous devez avoir un decompte de 102 disques.
 
 ### Ajout d'un Datastore
 
-Sélèctionner __Storage__ puis l'onglet __Datastores__
+Sélectionner __Storage__ puis l'onglet __Datastores__
 
 ![select-datastore-pane](images/esxi-dashboard-view-03.png)
 
@@ -206,7 +206,7 @@ selectionnez __finish__
 
 ![create-datastore-step04](images/esxi-dashboard-view-07.png)
 
-Message d'information vous rappelant que le disque selectionné sera entierement éffacé.
+Message d'information vous rappelant que le disque choisi sera entierement éffacé.
 
 ![create-datastore-step05](images/esxi-dashboard-view-08.png)
 
@@ -215,7 +215,7 @@ Votre Datastore est maintenant disponible
 ![create-datastore-step06](images/esxi-dashboard-view-09.png)
 
 ### Extension d'un Datastore
-Selectionnez le datastore à etendre
+Sélectionnez le datastore à étendre
 
 Cliquer sur l'icone __Increase capacity__
 
@@ -223,11 +223,11 @@ Cliquer sur l'icone __Increase capacity__
 ![extend-datastore-step01](images/esxi-dashboard-extendds-01.png)
 
 
-Selectionez __Add an extent to existing VMFS datastore__
+Sélectionez __Add an extent to existing VMFS datastore__
 
 ![extend-datastore-step02](images/esxi-dashboard-extendds-02.png)
 
-Selectionnez l'un des devices présenté
+Sélectionnez l'un des devices présenté
 
 ![extend-datastore-step03](images/esxi-dashboard-extendds-03.png)
 
@@ -235,13 +235,13 @@ Par défault l'ensemble du disque sera utilisé
 
 ![extend-datastore-step04](images/esxi-dashboard-extendds-04.png)
 
-Message d'information vous rappelant que le disque selectionné sera entierement éffacé.
+Message d'information vous rappelant que le disque choisi sera entierement éffacé.
 
 ![extend-datastore-step05](images/esxi-dashboard-view-08.png)
 
 Votre Datastore est maintenant étendu 
 
-Dans l'exemple augmentation de 12.73To à 25.47To
+Dans l'exemple, augmentation de 12.73To à 25.47To
 
 ![extend-datastore-step06](images/esxi-dashboard-extendds-05.png)
 
@@ -283,7 +283,7 @@ Apr 14 09:38:09 | DM multipath kernel driver not loaded
 ```
 ### Configuration du service multipath
 
-Activer le service
+Activer le service __multipathd__:
 ```bash
 [root@nsxxxxxx ~]# mpathconf --enable --with_multipathd y
 ```
@@ -293,11 +293,11 @@ Activer les options __user_friendly_names__ ainsi que __find_multipaths__
 [root@nsxxxxxx ~]# mpathconf --enable  --user_friendly_names  y  --find_multipaths  y
 ```
 
-Redemarrer le service __multipathd__
+Redémarrer le service __multipathd__:
 ```bash
 [root@nsxxxxxx ~]# systemctl restart multipathd
 ```
-Vérifier le bon status du service __multipathd__
+Vérifier le bon status du service __multipathd__:
 ```bash
 
 [root@nsxxxxxx ~]$ systemctl status multipathd
@@ -314,7 +314,7 @@ Vérifier le bon status du service __multipathd__
            └─15533 /sbin/multipathd -d -s
 ```
 
-Lister les devices multipath
+Lister les devices multipath:
 ```bash
 [root@nsxxxxxx ~]# multipath -l
 mpathcu (35000cca29bcbba74) dm-100 WDC,WUH721414AL5201
@@ -356,11 +356,12 @@ On constate que nous avons bien quatre chemins pour chaque device mpathXX listé
 ## Ubuntu Server 22.04 LTS
 
 ## Post-configuration
-Pas de paquets additionnels a installer.
+Pas de paquets additionnels à installer.
 La configuration se fait automatiquement.
 
 Vous n'avez donc rien de particulier à faire.
 
+Vérification de l'etat du service __multipathd__:
 ```bash
 ubuntu@nsxxxxxx:~$ sudo systemctl status multipathd
 ● multipathd.service - Device-Mapper Multipath Device Controller
@@ -410,13 +411,13 @@ Re-executing '/etc/kernel/postinst.d/zz-proxmox-boot' in new private mount names
 No /etc/kernel/proxmox-boot-uuids found, skipping ESP sync.
 ```
 
-Génération de la configuration initiale 
+Génération de la configuration initiale:
 
 ```bash
 root@nsxxxxxxx:~# multipath -T > /etc/multipath.conf
 ```
 
-Editer le fichier __/etc/multipath.conf__
+Editer le fichier __/etc/multipath.conf__:
 
 - Modifier l'option __find_multipaths__ a __"on"__
 
@@ -426,7 +427,7 @@ Editer le fichier __/etc/multipath.conf__
   
 ![proxmox-config-02](images/promox-config-02.png)
 
-Saugegarder le fichier __/etc/multipath.conf__ pui redémarrer le service __multipathd__
+Saugegarder le fichier __/etc/multipath.conf__ puis redémarrer le service __multipathd__
 
 ```bash
 root@nsxxxxxxx:~# systemctl restart multipathd
@@ -444,9 +445,9 @@ CPU: 3.958s
 CGroup: /system.slice/multipathd.service
 └─23680 /sbin/multipathd -d -s
 ```
-### Ajout d'un node storage de type LVM sur Promox
+### Ajout d'un node storage de type LVM sur Proxmox
 
-Il est nécéssaire de créer les Volumes Groupe (VG) manuellement afin que Promox puissent les utiliser
+Il est nécéssaire de créer les Volumes Groupe (VG) manuellement afin que Proxmox puissent les utilise.
 
 Exemple: Création d'un VG sur trois PV multipath
 
@@ -470,7 +471,7 @@ root@nsxxxxxxx:~# vgs
 
 Ajout d'un storage node
 
-Dans l'interface Proxmox, selectionner votre node puis LVM
+Dans l'interface Proxmox, sélectionner votre node puis LVM
 
 ![add-ns-lvm-step01](images/promox-add-storage01.png)
 
@@ -480,27 +481,28 @@ Le nouveau VG est maintenant listé
 
 ![add-ns-lvm-step02](images/promox-add-storage02.png)
 
-- Selectioner Datacenter -> Storage
+- Sélectioner Datacenter -> Storage
 - Puis le boutton Add -> LVM
-- Renseignez l'ID avec le nom de votre stockage ainsi que le VG cible que vous venez de créer.
+- Renseigner l'ID avec le nom de votre stockage ainsi que le VG cible que vous venez de créer.
 
-Une fois votre configuration définie cliquer sur le bouton _Add_
+Une fois votre configuration définie, cliquer sur le bouton _Add_
 
 ![add-ns-lvm-step03](images/promox-add-storage03.png)
 
 Le stockage est maintenant disponible
 ![add-ns-lvm-step04](images/promox-add-storage04.png)
 
-Vous pouvez l'utiliser pour le deploiement de VM ou autre
+Vous pouvez l'utiliser pour le déploiement de VM ou autre
 ![add-ns-lvm-step05](images/promox-add-storage05.png)
 
-### Ajout d'un node storage de type ZFS sur Promox
+### Ajout d'un node storage de type ZFS sur Proxmox
 
-Il est nécéssaire de créer les pools zfs manuellement afin que Promox puissent les utiliser
+Il est nécessaire de créer les pools zfs manuellement afin que Procmox puissent les utiliser.
 
-Exemple: Création d'un poll sur deux disques multipath
+Exemple: Création d'un pool sur deux disques multipath
 
 ```bash
+root@nsxxxxxxx:~# zpool create -f zfspool /dev/mapper/mpathe /dev/mapper/mpathf
 root@nsxxxxxxx:~# zpool status
 pool: zfspool01
 state: ONLINE
@@ -527,16 +529,15 @@ Renseignez l'ID avec le nom de votre stockage ainsi du l'un des zpool cible que 
 
 ![add-ns-zfs-step02](images/promox-add-storage07.png)
 
-Votre stockage Promox est maintenant utilisable
+Votre stockage Proxmox est maintenant utilisable
 
 ![add-ns-zfs-step03](images/promox-add-storage08.png)
-
 
 ---
 
 ## Remarque importante concernant LVM sur linux
 > [!warning]
-> Ne créer vos PV QUE sur les devices en multipath de type /dev/mapper/mpathXX
+> Ne créer vos PV QUE sur les devices en multipath de type /dev/mapper/mpath_XX_
 
 Exemple 
 
@@ -565,7 +566,7 @@ Création d'un LV
 ---
 ## Remarque importante concernant ZFS sur linux
 > [!warning]
-> Ne créer vos zfspool QUE sur les devices en multipath de type /dev/mapper/mpathXX
+> Ne créer vos zfspool QUE sur les devices en multipath de type /dev/mapper/mpath_XX_
 
 Exemple:
 ```bash
