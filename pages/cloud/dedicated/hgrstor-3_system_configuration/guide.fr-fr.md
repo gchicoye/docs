@@ -1,7 +1,7 @@
 ---
-title: 'Configuration Système pour l'utilisation de la baie disque HGR-STOR-3'
-slug: hgrstor-3_system_configuration
-excerpt: 'Configuration Système pour l'utilisation de la baie disque HGR-STOR-3.'
+title: "Configuration Système pour l'utilisation de la baie disque HGR-STOR-3"
+slug: hgrstor3_system_configuration
+excerpt: "Mise en place et configuration du multipath dans le cadre de l'utilisation de la baie HGR-STOR-3."
 section: 'Configuration'
 order: 6
 ---
@@ -15,7 +15,7 @@ En fonction des systémes,sans post-configuration spécifique, ceci peut être s
 
 En fonction de votre système, une post-configuration peut-être nécessaire afin de mettre en place les fonctionnalitées _multipath_.
 
-Le Multipath permet d'aggréger les différentes possibilitées d'accès au même disque ( path ) en tant que device logique unique.
+Le multipath permet d'aggréger les différentes possibilitées d'accès au même disque ( path ) en tant que device logique unique.
 
 Cette documentation détaille: 
 - Les templates Ovh compatibles (testés par nos equipes)
@@ -46,7 +46,7 @@ Cette baie présente pour chaque disque vu de l'OS :
 * Deux disques physiques ( exposant le même numero de série )
 * Accéder par deux controlleur SAS
 
-Il y a donc en tout quatre manière d'accéder à un disque vu par le système:
+Il y a donc en tout quatre manières d'accéder à un disque vu par le système:
 
 - Controleur SAS 1 -> Disque A
 - Controleur SAS 1 -> Disque B
@@ -59,26 +59,26 @@ Ceci est répliqué pour les 102 disques.
 
 | Template | Procédure | Remarques |
 |----------|-----------|-----------|
-|ESXI 7| Voir section ESXI-7 ci-dessous ||
-|AlmaLinux 8|Voir section AlmaLinux 8, Rocky Linux 8, Fedora 34 Server ci-dessous ||
-|Rocky Linux 8|Voir section AlmaLinux 8, Rocky Linux 8, Fedora 34 Server ci-dessous ||
-|Fedora 34 Server|Voir section AlmaLinux 8, Rocky Linux 8, Fedora 34 Server ci-dessous ||
-|Proxmox VE 7| Voir section Proxmox VE 7 ci-dessous||
-|Ubuntu Server 22.04 LTS|Voir section Ubuntu Server 22.04 LTS Server ci-dessous ||
+|ESXI 7| [Voir section ESXI-7](#esxi7)||
+|AlmaLinux 8|[Voir section AlmaLinux 8, Rocky Linux 8, Fedora 34 Server](#rhlike) ||
+|Rocky Linux 8|[Voir section AlmaLinux 8, Rocky Linux 8, Fedora 34 Server](#rhlike)||
+|Fedora 34 Server|[Voir section AlmaLinux 8, Rocky Linux 8, Fedora 34 Server](#rhlike) ||
+|Proxmox VE 7| [Voir section Proxmox VE 7](#proxmox7)||
+|Ubuntu Server 22.04 LTS|[Voir section Ubuntu Server 22.04 LTS Server](#ubuntusrv22) ||
 |Debian (toute version) | Non supporté, en cours d'investigation ||
 
 ---
 
-## ESXI-7
+### ESXI-7 <a name="esxi7"></a>
 
 Esxi n'a pas besoin d'installation de composants supplémentaires, le multipath est automatiquement géré.
 
 Si nécéssaire vous pouvez procéder aux vérifications décritent ci-dessous.
 
-### Vérifications
+#### Vérifications
 Vous connecter via ssh en shell sur votre Esxi.
 
-#### Liste des adapateurs
+##### Liste des adapateurs
 Vérifier que l'Esxi a bien détecté les deux controlleur SAS de type similaire à ce qui suis 
 
 ```bash
@@ -110,7 +110,7 @@ Vérifier que l'Esxi a bien détecté les deux controlleur SAS de type similaire
    Driver Version: 19.00.02.00
 ```
 
-#### Liste des disques
+##### Liste des disques
 
 ```bash
 root@nsxxxxxx:~] esxcli storage core device list | grep 'Display Name: Local WDC Disk'
@@ -140,7 +140,7 @@ Vous devez voir 102 disques
 102
 ```
 
-#### Details du multipath
+##### Details du multipath
 
 Note: Afin de ne pas surchager inutilement cette documentation, nous n'affichons qu'un des elements retourné.
 
@@ -167,7 +167,7 @@ On note que pour chaque device, il existe bien quatre chemins d'accès (ligne _P
 - Deux controlleur: __vmhba2__ et __vmhba3__
 - Deux disques terminaux: __T72__ et __T175__
 
-### Vue via l'interface WEB
+#### Vue via l'interface WEB
 
 Sélectionner __Storage__ puis l'onglet __Devices__
 
@@ -179,7 +179,7 @@ Scroller en bas de la liste, vous devez avoir un decompte de 102 disques.
 
 ![esxi-devices-count](images/esxi-dashboard-view-02.png)
 
-### Ajout d'un Datastore
+#### Ajout d'un Datastore
 
 Sélectionner __Storage__ puis l'onglet __Datastores__
 
@@ -214,7 +214,7 @@ Votre Datastore est maintenant disponible
 
 ![create-datastore-step06](images/esxi-dashboard-view-09.png)
 
-### Extension d'un Datastore
+#### Extension d'un Datastore
 Sélectionnez le datastore à étendre
 
 Cliquer sur l'icone __Increase capacity__
@@ -246,11 +246,11 @@ Dans l'exemple, augmentation de 12.73To à 25.47To
 ![extend-datastore-step06](images/esxi-dashboard-extendds-05.png)
 
 ---
-## AlmaLinux 8, Rocky Linux 8, Fedora 34 Server
+### AlmaLinux 8, Rocky Linux 8, Fedora 34 Server <a name="rhlike"></a>
 
-## Post-configuration
+#### Post-configuration
 
-Les paquets nécéssaires sont déja installés.
+Les paquets nécessaires sont déja installés.
 
 ```bash
 [root@nsxxxxxx ~]# yum install device-mapper-multipath sg3_utils
@@ -265,7 +265,7 @@ Nothing to do.
 Complete!
 ```
 
-Par contre, la configuration multipath reste à faire, le fichier __/etc/multipath.conf__ n'étant pas encore présent.
+Par contre, la configuration multipath reste a faire, le fichier __/etc/multipath.conf__ n'étant pas encore présent.
 
 ```bash
 [root@nsxxxxxx ~]# systemctl start multipathd
@@ -281,7 +281,7 @@ Apr 14 09:38:09 | You can run "/sbin/mpathconf --enable" to create
 Apr 14 09:38:09 | /etc/multipath.conf. See man mpathconf(8) for more details
 Apr 14 09:38:09 | DM multipath kernel driver not loaded
 ```
-### Configuration du service multipath
+#### Configuration du service multipath
 
 Activer le service __multipathd__:
 ```bash
@@ -299,7 +299,6 @@ Redémarrer le service __multipathd__:
 ```
 Vérifier le bon status du service __multipathd__:
 ```bash
-
 [root@nsxxxxxx ~]$ systemctl status multipathd
 ● multipathd.service - Device-Mapper Multipath Device Controller
    Loaded: loaded (/usr/lib/systemd/system/multipathd.service; enabled; vendor preset: enabled)
@@ -353,11 +352,11 @@ size=13T features='0' hwhandler='0' wp=rw
 On constate que nous avons bien quatre chemins pour chaque device mpathXX listé.
 
 ---
-## Ubuntu Server 22.04 LTS
+### Ubuntu Server 22.04 LTS <a name="ubuntusrv22"></a>
 
-## Post-configuration
-Pas de paquets additionnels à installer.
-La configuration se fait automatiquement.
+#### Post-configuration
+- Pas de paquets additionnels à installer.
+- La configuration se fait automatiquement.
 
 Vous n'avez donc rien de particulier à faire.
 
@@ -390,11 +389,11 @@ qApr 14 14:01:13 packer-output-aa7a287c-0b44-48b2-8087-614118424744 systemd[1]: 
 ```
 
 ---
-## Proxmox VE 7
+### Proxmox VE 7
 
-### Post-configuration
+#### Post-configuration <a name="proxmox7"></a>
 
-Installation des paquets nécessaires:
+Le paquet mutlipath-tools doit être installé:
 
 ```bash
 root@nsxxxxxxx:~# apt-get install multipath-tools
@@ -427,7 +426,7 @@ Editer le fichier __/etc/multipath.conf__:
   
 ![proxmox-config-02](images/promox-config-02.png)
 
-Saugegarder le fichier __/etc/multipath.conf__ puis redémarrer le service __multipathd__
+Sauvegarder le fichier __/etc/multipath.conf__ puis redémarrer le service __multipathd__
 
 ```bash
 root@nsxxxxxxx:~# systemctl restart multipathd
@@ -445,12 +444,11 @@ CPU: 3.958s
 CGroup: /system.slice/multipathd.service
 └─23680 /sbin/multipathd -d -s
 ```
-### Ajout d'un node storage de type LVM sur Proxmox
+#### Ajout d'un node storage de type LVM sur Proxmox
 
-Il est nécéssaire de créer les Volumes Groupe (VG) manuellement afin que Proxmox puissent les utilise.
+Il est nécessaire de créer les Volumes Groupe (VG) manuellement afin que Proxmox puissent les utiliser.
 
 Exemple: Création d'un VG sur trois PV multipath
-
 
 ```bash
 root@nsxxxxxxx:~# pvcreate /dev/mapper/mpathb
@@ -469,7 +467,7 @@ root@nsxxxxxxx:~# vgs
   vg_hgrstore01   3   0   0 wz--n-  38.20t 38.20t
 ```
 
-Ajout d'un storage node
+Ajout du storage node LVM
 
 Dans l'interface Proxmox, sélectionner votre node puis LVM
 
@@ -497,9 +495,9 @@ Vous pouvez l'utiliser pour le déploiement de VM ou autre
 
 ### Ajout d'un node storage de type ZFS sur Proxmox
 
-Il est nécessaire de créer les pools zfs manuellement afin que Procmox puissent les utiliser.
+Il est nécessaire de créer les pools zfs manuellement afin que Proxmox puissent les utiliser.
 
-Exemple: Création d'un pool sur deux disques multipath
+Exemple: Création d'un zpool sur deux disques multipath
 
 ```bash
 root@nsxxxxxxx:~# zpool create -f zfspool /dev/mapper/mpathe /dev/mapper/mpathf
@@ -519,13 +517,14 @@ root@nsxxxxxxx:~# zfs create zfspool01/fs02
 ```
 
 
+Ajout du storage node ZFS
+
 - Selectioner Datacenter -> Storage
 - Puis le boutton Add -> ZFS
 
 ![add-ns-zfs-step01](images/promox-add-storage06.png)
 
 Renseignez l'ID avec le nom de votre stockage ainsi du l'un des zpool cible que vous venez de créer.
-
 
 ![add-ns-zfs-step02](images/promox-add-storage07.png)
 
@@ -535,19 +534,19 @@ Votre stockage Proxmox est maintenant utilisable
 
 ---
 
-## Remarque importante concernant LVM sur linux
+### Remarque importante concernant LVM sur linux
 > [!warning]
 > Ne créer vos PV QUE sur les devices en multipath de type /dev/mapper/mpath_XX_
 
 Exemple 
 
-Création des PVs
+Création des LVM Physical Volume (PV)
 ```bash
 [root@nsxxxxxx ~]# pvcreate /dev/mapper/mpathb /dev/mapper/mpathc
 Physical volume "/dev/mapper/mpathb" successfully created.
 Physical volume "/dev/mapper/mpathc" successfully created.
 ```
-Création d'un VG
+Création d'un Volume Group (VG)
 ```bash
 [root@nsxxxxxx ~]# vgcreate vg_test01 /dev/mapper/mpathb /dev/mapper/mpathc
   Volume group "vg_test01" successfully created
@@ -555,7 +554,7 @@ Création d'un VG
   VG        #PV #LV #SN Attr   VSize   VFree 
   vg_test01   2   0   0 wz--n- <25.47t <25.47t
 ```
-Création d'un LV  
+Création d'un Logical Volume (LV)  
 ```bash
 [root@nsxxxxxx ~]# lvcreate --name lv_test01 --size 1To vg_test01
   Logical volume "lv_test01" created.
@@ -564,11 +563,11 @@ Création d'un LV
   lv_test01 vg_test01 -wi-a----- 1.00t
 ```
 ---
-## Remarque importante concernant ZFS sur linux
+### Remarque importante concernant ZFS sur linux
 > [!warning]
 > Ne créer vos zfspool QUE sur les devices en multipath de type /dev/mapper/mpath_XX_
 
-Exemple:
+Exemple: Création d'un zpool nommé __zfspool__ sur trois disque multipath
 ```bash
 [root@nsxxxxxx ~]# zpool create -f zfspool /dev/mapper/mpathe /dev/mapper/mpathf /dev/mapper/mpathg
 [root@nsxxxxxx ~]# zpool status
