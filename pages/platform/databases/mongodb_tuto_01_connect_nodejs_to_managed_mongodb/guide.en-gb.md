@@ -22,7 +22,7 @@ In this tutorial, we will use the Node.js platform to build a **real-time chat a
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
-- A [Public Cloud project](https://www.ovhcloud.com/de/public-cloud/) in your OVHcloud account.
+- A [Public Cloud project](https://www.ovhcloud.com/gb/en/public-cloud/) in your OVHcloud account.
 - An up and running Public Cloud Database for MongoDB.
 - A [NodeJS working environment](https://nodejs.dev/learn/how-to-install-nodejs) and public network connectivity (Internet). This tutorial was made using NodeJS LTS 16.14.0.
 
