@@ -25,7 +25,7 @@ You must therefore use the [OVHcloud API](https://docs.ovh.com/ca/fr/api/api-pre
 - A [Public Cloud project](https://www.ovhcloud.com/fr-ca/public-cloud/) in your OVHcloud account.
 - An up and running Public Cloud Database for Redis.
 
-If you have never used the OVHcloud API before, then follow this tutorial: [First Steps with the OVHcloud APIs](https://docs.ovh.com/ca/fr/api/first-steps-with-ovh-api/).
+If you have never used the OVHcloud API before, then follow this tutorial: [First Steps with the OVHcloud APIs](https://docs.ovh.com/ca/fr/api/api-premiers-pas/).
 
 For this tutorial, we consider that your are logged on the relevant API (Europe: <https://api.ovh.com>, Canada/Asia:  <https://ca.api.ovh.com>). We will use Europe API for this tutorial.
 
