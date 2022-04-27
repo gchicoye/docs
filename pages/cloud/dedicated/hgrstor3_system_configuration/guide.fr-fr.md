@@ -53,6 +53,10 @@ Il y a donc en tout quatre manière d'accéder à un disque vu par le système:
 - Controleur SAS 2 -> Disque A
 - Controleur SAS 2 -> Disque B
 
+Exemple d'acces multipath
+
+![multipath](images/multipath_ok.png)
+
 Ceci est repliqué pour les 102 disques.
 
 ### Liste des système d'exploitations
