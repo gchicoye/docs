@@ -182,7 +182,7 @@ aaa.aaa.aaa.aaa/32,bbb.bbb.bbb.bbb/32,ccc.ccc.ccc.ccc/32,ddd.ddd.ddd.ddd/32
 
 #### 1b. [PRIVATE NETWORK ONLY] Get the list of the egress load balancer IPs
 
-We will use this [10.0.0.0/20] CIDR notation later.
+You can find this address on your Private Network tab into the Public Cloud UI, as Private Network Address (CIDR) field. We will use this [10.0.0.0/20] CIDR notation later. 
 
 ### Patching methods
 
