@@ -146,8 +146,8 @@ Welcome to GNU Parted! Type 'help' to view a list of commands.
   toggle [NUMBER [FLAG]]                   toggle the state of FLAG on partition NUMBER
   unit UNIT                                set the default unit to UNIT
   version                                  display the version number and copyright information of GNU Parted
-(parted) mklabel pt                                                      
-(parted) mkpart primary 0 3750G                                           
+(parted) mklabel gpt                                                      
+(parted) mkpart primary 0 3750G  # can also be mkpart primary 0% 100%                                         
 Warning: The resulting partition is not properly aligned for best performance: 34s % 2048s != 0s
 Ignore/Cancel? I                                                          
 (parted) quit
